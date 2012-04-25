@@ -1,0 +1,5 @@
+E:\Dokumente\BHT\Master\c#\Calendar\Calendar\obj\Debug\ResolveAssemblyReference.cache
+E:\Dokumente\BHT\Master\c#\Calendar\Calendar\bin\Debug\Calendar.dll
+E:\Dokumente\BHT\Master\c#\Calendar\Calendar\bin\Debug\Calendar.pdb
+E:\Dokumente\BHT\Master\c#\Calendar\Calendar\obj\Debug\Calendar.dll
+E:\Dokumente\BHT\Master\c#\Calendar\Calendar\obj\Debug\Calendar.pdb

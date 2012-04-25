@@ -1,0 +1,9 @@
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\bin\Debug\TestApp.exe
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\bin\Debug\TestApp.pdb
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\obj\Debug\ResolveAssemblyReference.cache
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\obj\Debug\TestApp.exe
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\obj\Debug\TestApp.pdb
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\bin\Debug\Calendar.dll
+E:\Dokumente\BHT\Master\c#\Calendar\TestApp\bin\Debug\Calendar.pdb
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe2\TestApp\obj\Debug\TestApp.exe
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe2\TestApp\obj\Debug\TestApp.pdb

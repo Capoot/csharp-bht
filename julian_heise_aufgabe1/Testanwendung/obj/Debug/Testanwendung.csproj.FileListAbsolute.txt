@@ -1,0 +1,7 @@
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\obj\Debug\ResolveAssemblyReference.cache
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\bin\Debug\Testanwendung.exe
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\bin\Debug\Testanwendung.pdb
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\bin\Debug\CalculatorAssembly.dll
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\bin\Debug\CalculatorAssembly.pdb
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\obj\Debug\Testanwendung.exe
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe1\Testanwendung\obj\Debug\Testanwendung.pdb
