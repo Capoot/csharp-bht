@@ -11,5 +11,10 @@ namespace CalendarLib
             get;
             set;
         }
+
+        public override string ToString()
+        {
+            return base.ToString() + " (Deadline)";
+        }
     }
 }
