@@ -23,5 +23,10 @@ namespace CalendarLib
             get;
             set;
         }
+
+        public string Icon
+        {
+            get { return "user_gray.png"; }
+        }
     }
 }

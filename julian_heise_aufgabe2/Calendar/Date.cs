@@ -22,5 +22,10 @@ namespace CalendarLib
         {
             return base.ToString() + " (Verabredung)";
         }
+
+        public string Icon
+        {
+            get { return "group.png"; }
+        }
     }
 }

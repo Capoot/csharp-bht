@@ -16,5 +16,10 @@ namespace CalendarLib
         {
             return base.ToString() + " (Deadline)";
         }
+
+        public string Icon
+        {
+            get { return "date.png"; }
+        }
     }
 }

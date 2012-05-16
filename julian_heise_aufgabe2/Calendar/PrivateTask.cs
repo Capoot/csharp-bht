@@ -10,5 +10,10 @@ namespace CalendarLib
 
         public PrivateTask(string due, string title, Priority priority, string description)
             : base(due, title, priority, description) { }
+
+        public string Icon
+        {
+            get { return "house.png"; }
+        }
     }
 }

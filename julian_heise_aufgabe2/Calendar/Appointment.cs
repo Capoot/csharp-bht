@@ -84,5 +84,13 @@ namespace CalendarLib
         {
             return string.Format("{0} {1} {2}", Date, Time, Title);
         }
+
+        public string DateTime
+        {
+            get
+            {
+                return string.Format("Am {0} um {1} Uhr", Date, Time);
+            }
+        }
     }
 }

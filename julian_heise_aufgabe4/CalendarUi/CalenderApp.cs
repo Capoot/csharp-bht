@@ -30,14 +30,25 @@ namespace CalendarUi
 
         #region Events
 
-        public delegate void AppointmentsChangedHandler(object sender, EventArgs e);
+        public delegate void AppointmentsChangedHandler();
         public event AppointmentsChangedHandler AppointmentsChanged;
 
-        private void fireAppointmentsChanged(EventArgs args)
+        private void fireAppointmentsChanged()
         {
             if (AppointmentsChanged != null)
             {
-                AppointmentsChanged(this, args);
+                AppointmentsChanged();
+            }
+        }
+
+        public delegate void TasksChangedHandler();
+        public event TasksChangedHandler TasksChanged;
+
+        private void fireTasksChanged()
+        {
+            if (TasksChanged != null)
+            {
+                TasksChanged();
             }
         }
 
@@ -65,28 +76,35 @@ namespace CalendarUi
         public void AddAppointment(Appointment a)
         {
             appointments.Add(a);
-            fireAppointmentsChanged(EventArgs.Empty);
+            fireAppointmentsChanged();
         }
 
         public void RemoveAppointment(Appointment a)
         {
             appointments.Remove(a);
-            fireAppointmentsChanged(EventArgs.Empty);
+            fireAppointmentsChanged();
         }
 
         public void AddTask(Task t)
         {
             tasks.Add(t);
+            fireTasksChanged();
         }
 
         public void RemoveTask(Task t)
         {
             tasks.Remove(t);
+            fireTasksChanged();
         }
 
         internal void InvalidateAppointments()
         {
-            fireAppointmentsChanged(EventArgs.Empty);
+            fireAppointmentsChanged();
+        }
+
+        internal void InvalidateTasks()
+        {
+            fireTasksChanged();
         }
     }
 }

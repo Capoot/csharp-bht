@@ -17,3 +17,5 @@ E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe4\CalendarUi\obj\Debug\Appointmen
 E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe4\CalendarUi\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe4\CalendarUi\obj\Debug\CalendarUi_MarkupCompile.lref
 E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe4\CalendarUi\obj\Debug\Themes\Generic.baml
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe4\CalendarUi\obj\Debug\TaskDialog.baml
+E:\Dokumente\BHT\Master\c#\julian_heise_aufgabe4\CalendarUi\obj\Debug\TaskDialog.g.cs
