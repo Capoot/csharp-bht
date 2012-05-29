@@ -4,6 +4,11 @@
     Title="Kalender" Height="356" Width="422">
     
     <Window.Resources>
+        <!--
+            Die ListItemTemplates definieren das Erscheinungsbild der einzelnen Listeneinträge
+            für Termine und Aufgaben. Es wird ein Grid Layout festgelegt, so dass die Einträge
+            ein Icon und mehrere Textzeilen haben können.
+        -->
         <DataTemplate x:Key="ListItemTemplate">
             <StackPanel>
                 <Grid>
