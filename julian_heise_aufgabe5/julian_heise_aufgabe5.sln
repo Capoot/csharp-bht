@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarUi", "CalendarUi\CalendarUi.csproj", "{0ABE9B9C-51DE-4F39-9F3B-CAB2DFA1C151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendar", "..\julian_heise_aufgabe2\Calendar\Calendar.csproj", "{C3F38BB4-9610-4667-A11A-8BC845ABD667}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0ABE9B9C-51DE-4F39-9F3B-CAB2DFA1C151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABE9B9C-51DE-4F39-9F3B-CAB2DFA1C151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABE9B9C-51DE-4F39-9F3B-CAB2DFA1C151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABE9B9C-51DE-4F39-9F3B-CAB2DFA1C151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F38BB4-9610-4667-A11A-8BC845ABD667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F38BB4-9610-4667-A11A-8BC845ABD667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F38BB4-9610-4667-A11A-8BC845ABD667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F38BB4-9610-4667-A11A-8BC845ABD667}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

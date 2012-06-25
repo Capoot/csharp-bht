@@ -1,0 +1,11 @@
+﻿<Window x:Class="CalendarUi.TextInputBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TextInputBox" Height="139" Width="273" ResizeMode="NoResize">
+    <Grid>
+        <Button Height="23" HorizontalAlignment="Right" Margin="0,0,10,5" Name="cancelButton" VerticalAlignment="Bottom" Width="75" Click="cancelButton_Click" IsCancel="True" TabIndex="2">Cancel</Button>
+        <Label Height="28" Name="label1" VerticalAlignment="Top" Margin="11,0,10,0">Label</Label>
+        <TextBox Margin="11,36,10,42" Name="textBox" TabIndex="0" />
+        <Button Height="23" Margin="85,0,0,5" Name="okButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="75" Click="okButton_Click" IsDefault="True" TabIndex="1">Ok</Button>
+    </Grid>
+</Window>

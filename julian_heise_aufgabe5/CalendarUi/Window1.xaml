@@ -1,0 +1,129 @@
+﻿<Window x:Class="CalendarUi.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Kalender" Height="383" Width="422" ResizeMode="CanMinimize">
+    
+    <Window.Resources>
+        <!--
+            Die ListItemTemplates definieren das Erscheinungsbild der einzelnen Listeneinträge
+            für Termine und Aufgaben. Es wird ein Grid Layout festgelegt, so dass die Einträge
+            ein Icon und mehrere Textzeilen haben können.
+        -->
+        <DataTemplate x:Key="ListItemTemplate">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image 
+                        Source="{Binding Path=Icon}" 
+                        Grid.Column="0" 
+                        Grid.RowSpan="3" Margin="5" />
+                    <TextBlock 
+                        Text="{Binding Path=Title}" 
+                        Grid.Column="1" 
+                        Grid.Row="0" 
+                        FontWeight="Bold" />
+                    <TextBlock 
+                        Text="{Binding Path=DateTime}" 
+                        Grid.Column="1" 
+                        Grid.Row="1" />
+                    <TextBlock 
+                        Text="{Binding Path=Description}" 
+                        Grid.Column="1" 
+                        Grid.Row="2"
+                        FontSize="12"
+                        FontStyle="italic"
+                        />
+                </Grid>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="ListItemTemplate2">
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="32"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image 
+                        Source="{Binding Path=Icon}" 
+                        Grid.Column="0" 
+                        Grid.RowSpan="3" Margin="5" />
+                    <TextBlock 
+                        Text="{Binding Path=Title}" 
+                        Grid.Column="1" 
+                        Grid.Row="0" 
+                        FontWeight="Bold" />
+                    <TextBlock 
+                        Text="{Binding Path=Due}" 
+                        Grid.Column="1" 
+                        Grid.Row="1" />
+                    <TextBlock 
+                        Text="{Binding Path=Description}" 
+                        Grid.Column="1" 
+                        Grid.Row="2"
+                        FontSize="12"
+                        FontStyle="italic"
+                        />
+                </Grid>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
+
+    <TabControl Name="tabControl1" SelectedIndex="0">
+        <TabItem Header="Termine">
+            <WrapPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <ListBox Width="390" Height="261" Name="appointmentsList" ItemTemplate="{StaticResource ListItemTemplate}" />
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                    <Button Height="23" Name="button1" Width="75" Click="button1_Click">Neu</Button>
+                    <Button Height="23" Name="button2" Width="75" Click="button2_Click">Bearbeiten</Button>
+                    <Button Height="23" Name="button3" Width="75" Click="button3_Click">Löschen</Button>
+                    <Button Height="23" Name="filterButton" Width="75" Click="filterButton_Click">Filtern</Button>
+                    <Button Height="23" Name="clearFilterButton" Width="90" Visibility="Hidden" Click="clearFilterButton_Click">Filter Löschen</Button>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label>Anzeigen:</Label>
+                    <RadioButton VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5" Checked="AppointmentsRadioButton_Checked" Name="dateRadio">Verabredungen</RadioButton>
+                    <RadioButton VerticalAlignment="Center" Margin="5" Checked="AppointmentsRadioButton_Checked" Name="deadlineRadio">Deadlines</RadioButton>
+                    <RadioButton IsChecked="true" VerticalAlignment="Center" Margin="5" Checked="AppointmentsRadioButton_Checked" Name="allRadio">Alles</RadioButton>
+                </WrapPanel>
+            </WrapPanel>
+        </TabItem>
+        <TabItem Header="Aufgaben">
+            <WrapPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <WrapPanel HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <ListBox Width="390" Height="261" Name="taskList" ItemTemplate="{StaticResource ListItemTemplate2}" />
+                </WrapPanel>
+                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                    <Button Height="23" Name="tasknew" Width="75" Click="tasknew_Click">Neu</Button>
+                    <Button Height="23" Name="taskedit" Width="75" Click="taskedit_Click">Bearbeiten</Button>
+                    <Button Height="23" Name="taskdelete" Width="75" Click="taskdelete_Click">Löschen</Button>
+                    <Button Height="23" Name="taskFilterButton" Width="75" Click="taskFilterButton_Click">Filtern</Button>
+                    <Button Height="23" Name="clearTaskFilterButton" Width="90" Visibility="Hidden" Click="clearTaskFilterButton_Click">Filter löschen</Button>
+                </WrapPanel>
+                <WrapPanel>
+                    <Label>Anzeigen:</Label>
+                    <RadioButton VerticalContentAlignment="Top" VerticalAlignment="Center" Margin="5" Checked="TasksRadioButton_Checked" Name="privateRadio">Private Aufgaben</RadioButton>
+                    <RadioButton VerticalAlignment="Center" Margin="5" Checked="TasksRadioButton_Checked" Name="businessRadio">Geschäftliche Aufgaben</RadioButton>
+                    <RadioButton IsChecked="true" VerticalAlignment="Center" Margin="5" Checked="TasksRadioButton_Checked" Name="allTaskRadio">Alles</RadioButton>
+                </WrapPanel>
+            </WrapPanel>
+        </TabItem>
+    </TabControl>
+
+
+</Window>
+
